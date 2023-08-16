@@ -120,7 +120,7 @@ table.stats tr.total td {
 
         <div class="info">
             
-            <p>During: <span class="l10n datetime">2023-08-16 10:27:03</span> - <span class="l10n datetime">2023-08-16 10:28:02</span></p>
+            <p>During: <span class="l10n datetime">2023-08-16 12:58:58</span> - <span class="l10n datetime">2023-08-16 12:59:57</span></p>
             <p>Target Host: <span>https://koo-suggest-v2-sanic-gcp.prod.internal.kooapp.com</span></p>
             <p>Script: <span>locust_trending_tag_feed_test.py</span></p>
         </div>
@@ -146,28 +146,28 @@ table.stats tr.total td {
                     
                         <tr>
                             <td>POST</td>
-                            <td>/ku/suggest/en/trending_tag</td>
-                            <td>57</td>
-                            <td>57</td>
-                            <td>49</td>
-                            <td>34</td>
-                            <td>225</td>
-                            <td>688</td>
+                            <td>/ku/suggest/en/trending_tag_feed</td>
+                            <td>56</td>
+                            <td>0</td>
+                            <td>64</td>
+                            <td>42</td>
+                            <td>334</td>
+                            <td>97</td>
                             <td>1.0</td>
-                            <td>1.0</td>
+                            <td>0.0</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>57</td>
-                            <td>57</td>
-                            <td>49</td>
-                            <td>34</td>
-                            <td>225</td>
-                            <td>688</td>
+                            <td>56</td>
+                            <td>0</td>
+                            <td>64</td>
+                            <td>42</td>
+                            <td>334</td>
+                            <td>97</td>
                             <td>1.0</td>
-                            <td>1.0</td>
+                            <td>0.0</td>
                         </tr>
                     
                 </tbody>
@@ -195,58 +195,34 @@ table.stats tr.total td {
                     
                         <tr>
                             <td>POST</td>
-                            <td>/ku/suggest/en/trending_tag</td>
-                            <td>46</td>
-                            <td>47</td>
-                            <td>48</td>
-                            <td>49</td>
+                            <td>/ku/suggest/en/trending_tag_feed</td>
                             <td>51</td>
-                            <td>99</td>
-                            <td>230</td>
-                            <td>230</td>
+                            <td>53</td>
+                            <td>60</td>
+                            <td>88</td>
+                            <td>90</td>
+                            <td>96</td>
+                            <td>330</td>
+                            <td>330</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>46</td>
-                            <td>47</td>
-                            <td>48</td>
-                            <td>49</td>
                             <td>51</td>
-                            <td>99</td>
-                            <td>230</td>
-                            <td>230</td>
+                            <td>53</td>
+                            <td>60</td>
+                            <td>88</td>
+                            <td>90</td>
+                            <td>96</td>
+                            <td>330</td>
+                            <td>330</td>
                         </tr>
                     
                 </tbody>
             </table>
         </div>
 
-        
-            <div class="failures">
-                <h2>Failures Statistics</h2>
-                <table class="stats">
-                    <thead>
-                        <tr>
-                            <th class="sortable">Method</th>
-                            <th class="sortable">Name</th>
-                            <th class="sortable">Error</th>
-                            <th class="sortable">Occurrences</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                            <tr>
-                                <td>POST</td>
-                                <td>/ku/suggest/en/trending_tag</td>
-                                <td>404 Client Error: Not Found for url: /ku/suggest/en/trending_tag</td>
-                                <td>57</td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
         
 
         
@@ -536,12 +512,12 @@ function fillTasksFromRequest() {
     <script>
         
 var stats_history = {
-    "time": ["10:27:08", "10:27:13", "10:27:18", "10:27:23", "10:27:28", "10:27:33", "10:27:38", "10:27:43", "10:27:48", "10:27:53", "10:27:58"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
+    "time": ["12:59:03", "12:59:08", "12:59:13", "12:59:18", "12:59:23", "12:59:28", "12:59:33", "12:59:38", "12:59:43", "12:59:48", "12:59:53"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
     "user_count": [{"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}, {"value": 1}],
-    "current_rps": [{"users": 1, "value": 1.0}, {"users": 1, "value": 0.875}, {"users": 1, "value": 0.9}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 0.9}, {"users": 1, "value": 0.9}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 0.9}],
-    "current_fail_per_sec": [{"users": 1, "value": 1.0}, {"users": 1, "value": 0.875}, {"users": 1, "value": 0.9}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 0.9}, {"users": 1, "value": 0.9}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 0.9}],
-    "response_time_percentile_1": [{"users": 1, "value": 49}, {"users": 1, "value": 49}, {"users": 1, "value": 49}, {"users": 1, "value": 48}, {"users": 1, "value": 46}, {"users": 1, "value": 46}, {"users": 1, "value": 39}, {"users": 1, "value": 39}, {"users": 1, "value": 38}, {"users": 1, "value": 39}, {"users": 1, "value": 39}],
-    "response_time_percentile_2": [{"users": 1, "value": 49}, {"users": 1, "value": 100}, {"users": 1, "value": 100}, {"users": 1, "value": 99}, {"users": 1, "value": 99}, {"users": 1, "value": 51}, {"users": 1, "value": 51}, {"users": 1, "value": 48}, {"users": 1, "value": 48}, {"users": 1, "value": 85}, {"users": 1, "value": 90}],
+    "current_rps": [{"users": 1, "value": 0.6666666666666666}, {"users": 1, "value": 0.875}, {"users": 1, "value": 0.9}, {"users": 1, "value": 0.9}, {"users": 1, "value": 1.0}, {"users": 1, "value": 1.0}, {"users": 1, "value": 0.9}, {"users": 1, "value": 0.9}, {"users": 1, "value": 1.0}, {"users": 1, "value": 0.9}, {"users": 1, "value": 0.9}],
+    "current_fail_per_sec": [{"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}, {"users": 1, "value": 0}],
+    "response_time_percentile_1": [{"users": 1, "value": 89}, {"users": 1, "value": 89}, {"users": 1, "value": 53}, {"users": 1, "value": 55}, {"users": 1, "value": 61}, {"users": 1, "value": 52}, {"users": 1, "value": 51}, {"users": 1, "value": 52}, {"users": 1, "value": 51}, {"users": 1, "value": 49}, {"users": 1, "value": 49}],
+    "response_time_percentile_2": [{"users": 1, "value": 330.0}, {"users": 1, "value": 330.0}, {"users": 1, "value": 100}, {"users": 1, "value": 90}, {"users": 1, "value": 90}, {"users": 1, "value": 89}, {"users": 1, "value": 89}, {"users": 1, "value": 92}, {"users": 1, "value": 92}, {"users": 1, "value": 51}, {"users": 1, "value": 51}],
     "markers": [],
 };
         var percentile1 = 0.5
